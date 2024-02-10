@@ -1,0 +1,15 @@
+<h1>Info for <%= @fruit.name %>:</h1>
+
+<h2>Family: <%= @fruit.family %></h2>
+<h2>Order: <%= @fruit.order %></h2>
+<h2>Genus: <%= @fruit.genus %></h2>
+
+<h1>Nutrition:</h1>
+
+<h2>Calories: <%= @nutritions[:calories] %>g</h2>
+<h2>Fat: <%= @nutritions[:fat] %>g</h2>
+<h2>Sugar: <%=@nutritions[:sugar] %>g</h2>
+<h2>Carbohydrates: <%= @nutritions[:carbohydrates] %>g</h2>
+<h2>Protein: <%= @nutritions[:protein] %>g</h2>
+
+<h3><%= link_to "Find Similar Fruits By Nutritional Value", "/fruits/nutritional?name=#{@fruit.name}" %></h3>
