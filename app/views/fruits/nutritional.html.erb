@@ -1,6 +1,6 @@
 <h1>Fruits With Similar Sugar Levels:</h1>
 
 <% @similar_fruits.each do |fruit| %>
-  <h2><%= link_to fruit.name, fruits_path(search: fruit.name), method: :post %></h2>
+  <h2><%= link_to fruit.name, fruits_path(search: fruit.name), method: :get %></h2>
   <h3>Sugars: <%= fruit.nutritions[:sugar] %>g</h3>
 <% end %>  
