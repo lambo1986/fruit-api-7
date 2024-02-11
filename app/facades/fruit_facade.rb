@@ -1,5 +1,5 @@
-class FruitFacade
-
+class FruitFacade# takes the API call from the service, sends it to the poro and back, and then to the controller
+# takes params from the controller for API queries
   attr_reader :fruit_name
 
   def initialize(fruit_name)
